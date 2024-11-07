@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NowPress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="navbar">
+
+        <img src="./assets/logo_blog.png" alt="" srcset="" id="img" onclick="reload()">
+        <div class="bar">
+            <ul id="list">
+                <li id="ipl" onclick="onNavItemClick('ipl')"> IPL</li>
+                <li id="finance" onclick="onNavItemClick('finance')" >FINANCE</li>
+                <li id="politics" onclick="onNavItemClick('politics')">POLITICS</li>
+                <li id="technology" onclick="onNavItemClick('technology')">TECHNOLOGY</li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" name="" id="text" placeholder="Types Here">
+            <input type="button" value="Search" id="search-btn">
+        </div>
+
+    </section>
+
+    <section id="cardcontainer">
+
+        <div class="allcard" id="all-card">
+
+        </div>
+
+
+
+
+    </section>
+
+    <template id="template-news-card">
+
+
+
+        <!-- 1 card -->
+        <div class="card">
+            <img src="https://via.placeholder.come/400x200" alt="" id="cardimg">
+            <div class="discription">
+                <h2 id="news-title">This is title</h2>
+                <h6 id="news-source">End Of the Era</h6>
+                <p id="news-discription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, culpa?
+                </p>
+            </div>
+        </div>
+
+
+    </template>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
